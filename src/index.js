@@ -9,10 +9,10 @@ let heroi = ["Ragnarok",7001]
 //Defini como constante, pois dificilmente esses valores mudariam.
 const nivel = ["Ferro", "Bronze", "Prata", "Ouro", "Platina Diamante", "Ascendente", "Imortal", "Radiante"]
 
-const mensageria = ["seu XP atual é ", ", e alcançou o nível: "]
+const mensageria = ["O herói de nome", "está no nivel de"]
 
 //Optei por criar uma constante para concatenar e ter um certo padrão, sendo assim a manutenção no code fica mais fácil.
-const prompt = heroi[0]+" "+mensageria[0]+"["+heroi[1]+"]"+mensageria[1]
+const prompt = mensageria[0]+" "+heroi[0]+" "+mensageria[1]
 
 // Até tentei aplicar switch, mas para esse desafio, acredito ser mais aplicável a decisão IF.
 // Se XP do heroi for 1000, nada acontecerá, isso porque resolvi seguir aos pé da letra o que foi proposto no desafio.
